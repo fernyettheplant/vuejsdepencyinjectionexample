@@ -1,6 +1,6 @@
 {
   "name": "dependencyinjectionexample",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -8,11 +8,14 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "core-js": "^2.6.5",
+    "inversify-props": "^1.0.5",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "vuex-module-decorators": "^0.9.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",

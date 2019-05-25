@@ -15,4 +15,8 @@ export default class KanyeWest extends VuexModule {
   public setKanyeQuote (newKanyeQuote: KanyeQuote): void {
     this.kanyeQuote = newKanyeQuote
   }
+
+  get quote (): string {
+    return this.kanyeQuote !== null ? this.kanyeQuote.quote : ''
+  }
 }

@@ -11,14 +11,12 @@ export default class KanyeWest extends VuexModule {
   public kanyeQuote: KanyeQuote | null = null
 
   @Action
-  public async fetchKanyeQuote (): Promise<boolean> {
+  public async fetchKanyeQuote (): Promise<void> {
     try {
       const kanyeQuote = await this.kanyeWestService.getQuote()
       this.context.commit('setKanyeQuote', kanyeQuote)
-      return true
     } catch (error) {
       console.error(error)
-      return false
     }
   }
 
